@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact List</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="fullContainer">
+      <header>
+        <h1>Agenda Telefonica</h1>
+        <h2>Adicionar contato</h2>
+      </header>
+      <section class="container">
+        <form id="form-container" autocomplete="off">
+          <input
+            id="inputName"
+            type="text"
+            required
+            placeholder="Nome do contato"
+          />
+          <input
+            id="inputNumber"
+            type="tel"
+            required
+            placeholder="Telefone do contato"
+          />
+          <label for="input-color">Contact color:</label>
+          <input id="input-color" type="color" />
+
+          <button type="submit">Adicionar</button>
+        </form>
+        <table>
+          <tbody>
+            <tr>
+              <td id="contact-photo">
+                <img src="./images/person.png" alt="contact icon" />
+              </td>
+              <td id="contact-name">
+                <ul>
+                  <li>Nome do contato</li>
+                  <li id="personal-contact-name">Contact Name</li>
+                </ul>
+              </td>
+              <td id="contact-number">
+                <ul>
+                  <li>Número do contato</li>
+                  <li id="personal-contact-number">12345-6789</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </body>
+</html>
+<script src="./main.js"></script>

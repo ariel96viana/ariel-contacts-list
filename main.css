@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Carlito", sans-serif;
+}
+
+body {
+  padding-top: 100px;
+}
+
+h1,
+h2,
+form {
+  margin-bottom: 16px;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+label {
+  color: #666565;
+}
+
+::placeholder {
+  color: #666565;
+}
+
+button {
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+button:hover {
+  background-color: #424242;
+  color: #bdbdbd;
+}
+
+input {
+  font-size: 16px;
+}
+#input-color::-webkit-color-swatch {
+  border: none;
+  border-radius: 100%;
+}
+#input-color::-webkit-color-swatch-wrapper {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+}
+
+#input-color {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+input[type="text"],
+input[type="tel"] {
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+}
+input:focus {
+  outline: none;
+}
+
+.fullContainer {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+table {
+  border: 5px solid black;
+  padding: 24px;
+  border-radius: 10px;
+  background-color: #424242;
+  color: #bdbdbd;
+  width: 960px;
+}
+#contact-photo {
+  border: 1px solid #bdbdbd;
+  border-radius: 50%;
+}
+tr {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-bottom: 1px solid #bdbdbd21;
+  width: 100%;
+  gap: 50px;
+}
+td img {
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+}
+
+td {
+  text-align: start;
+}
+li {
+  list-style-type: none;
+  margin-bottom: 8px;
+  color: #bdbdbd4d;
+  font-size: 12px;
+}
+
+#personal-contact-number,
+#personal-contact-name {
+  color: #bdbdbd;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#contact-name,
+#contact-number {
+  width: 350px;
+}
